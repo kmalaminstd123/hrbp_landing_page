@@ -80,19 +80,21 @@ h1, h2, h3, h4, h5, h6 {
 /* Navigation */
 .navbar {
     padding: 1.5rem 0;
-    background: rgba(15, 23, 42, 0.95);
-    backdrop-filter: blur(10px);
+    /* background: rgba(15, 23, 42, 0.95); */
+    /* backdrop-filter: blur(10px); */
     transition: var(--transition-normal);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 .navbar.scrolled {
     padding: 1rem 0;
     box-shadow: var(--shadow-md);
+    background: transparent;
+    backdrop-filter: blur(10px);
 }
 
 .navbar-brand img{
-    height: 30px;
+    height: 40px;
     width: auto;
 }
 
