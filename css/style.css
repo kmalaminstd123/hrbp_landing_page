@@ -855,6 +855,216 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
+.certificate-validity-section {
+    background: var(--dark-bg);
+    padding: var(--section-padding);
+}
+
+.validity-content {
+    margin-top: 3rem;
+}
+
+.validity-info-card {
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 3rem;
+    height: 100%;
+}
+
+.validity-icon {
+    width: 90px;
+    height: 90px;
+    background: var(--gradient-primary);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.validity-icon i {
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.validity-info-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.validity-info-card .lead {
+    margin-bottom: 2.5rem;
+}
+
+.validity-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.validity-feature-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 15px;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    transition: var(--transition-normal);
+}
+
+.validity-feature-item:hover {
+    background: rgba(99, 102, 241, 0.15);
+    border-color: var(--primary-color);
+    transform: translateX(10px);
+}
+
+.validity-feature-item > i {
+    font-size: 2rem;
+    color: var(--primary-light);
+    flex-shrink: 0;
+}
+
+.validity-feature-item h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+}
+
+.validity-feature-item p {
+    color: var(--gray-text);
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Recertification Timeline */
+.recertification-timeline {
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 3rem;
+    height: 100%;
+}
+
+.recertification-timeline h4 {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    bottom: 20px;
+    width: 3px;
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-left: 3rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--dark-bg);
+    z-index: 2;
+}
+
+.timeline-marker i {
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.timeline-marker.year-0 {
+    background: var(--gradient-primary);
+}
+
+.timeline-marker.year-1-2 {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.timeline-marker.year-3 {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.timeline-marker.renewal {
+    background: var(--gradient-accent);
+}
+
+.timeline-content {
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: var(--transition-normal);
+}
+
+.timeline-content:hover {
+    background: rgba(99, 102, 241, 0.15);
+    border-color: var(--primary-color);
+    transform: translateX(10px);
+}
+
+.timeline-content h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+}
+
+.timeline-content p {
+    color: var(--gray-text);
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Recertification CTA */
+.recertification-cta {
+    margin-top: 4rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(236, 72, 153, 0.2) 100%);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 20px;
+    padding: 2.5rem;
+}
+
+.recertification-cta h4 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+}
+
+.recertification-cta p {
+    color: var(--gray-text);
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+
 /* Accreditation Section */
 .accreditation-section {
     background: var(--dark-bg);
