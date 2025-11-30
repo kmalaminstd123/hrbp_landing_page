@@ -403,6 +403,7 @@ h1, h2, h3, h4, h5, h6 {
 .programs-section,
 .accreditation-section {
     padding: var(--section-padding);
+    overflow: hidden;
 }
 
 .section-badge {
@@ -857,6 +858,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Accreditation Section */
 .accreditation-section {
     background: var(--dark-bg);
+    overflow: hidden;
 }
 
 .accreditation-grid {
