@@ -1528,3 +1528,455 @@ h1, h2, h3, h4, h5, h6 {
 .modal form .form-floating label{
     color: #000;
 }
+
+/* ============================================
+   Recertification Modal Styles
+   ============================================ */
+
+/* Modal Backdrop */
+.modal-backdrop.show {
+    backdrop-filter: blur(8px);
+    background-color: rgba(15, 23, 42, 0.85);
+}
+
+/* Modal Content */
+.recertification-modal {
+    background: var(--dark-card);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Header */
+.recertification-modal .modal-header {
+    background: var(--gradient-primary);
+    border-bottom: none;
+    padding: 2rem 2.5rem;
+}
+
+.recertification-modal .modal-title {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+}
+
+.recertification-modal .modal-title i {
+    font-size: 2.5rem;
+}
+
+.recertification-modal .btn-close {
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+    transition: var(--transition-fast);
+}
+
+.recertification-modal .btn-close:hover {
+    opacity: 1;
+    transform: rotate(90deg);
+}
+
+/* Modal Body */
+.recertification-modal .modal-body {
+    padding: 2.5rem;
+    max-height: 70vh;
+}
+
+/* Section Styles */
+.recert-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.recert-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.recert-section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.recert-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.recert-icon i {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.recert-section-header h3 {
+    font-size: 1.75rem;
+    margin: 0;
+    color: var(--light-text);
+}
+
+.recert-description,
+.recert-subtitle {
+    font-size: 1.1rem;
+    color: var(--gray-text);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* Cycle Card */
+.recert-cycle-card {
+    background: rgba(99, 102, 241, 0.1);
+    border: 2px solid rgba(99, 102, 241, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: var(--transition-normal);
+}
+
+.recert-cycle-card:hover {
+    border-color: var(--primary-color);
+    background: rgba(99, 102, 241, 0.15);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-glow);
+}
+
+.cycle-badge {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+}
+
+.cycle-number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1;
+}
+
+.cycle-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.recert-cycle-card p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--light-text);
+}
+
+/* Method Cards */
+.recert-method-card {
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    height: 100%;
+    transition: var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.recert-method-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: var(--transition-normal);
+}
+
+.recert-method-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-glow);
+}
+
+.recert-method-card:hover::before {
+    transform: scaleX(1);
+}
+
+.method-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.method-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-accent);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.method-icon i {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.method-header h4 {
+    font-size: 1.3rem;
+    margin: 0;
+    color: var(--light-text);
+}
+
+.method-requirement {
+    font-size: 1rem;
+    color: var(--gray-text);
+    margin-bottom: 1.5rem;
+}
+
+.method-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.method-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    color: var(--gray-text);
+    font-size: 0.95rem;
+}
+
+.method-list li:last-child {
+    margin-bottom: 0;
+}
+
+.method-list i {
+    color: var(--primary-light);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Fee Card */
+.recert-fee-card {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%);
+    border: 2px solid rgba(34, 197, 94, 0.4);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: var(--transition-normal);
+}
+
+.recert-fee-card:hover {
+    border-color: rgba(34, 197, 94, 0.6);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 32px rgba(34, 197, 94, 0.2);
+}
+
+.fee-badge {
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #22c55e 0%, #10b981 100%);
+    padding: 1.5rem 2rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 0 4px 16px rgba(34, 197, 94, 0.3);
+}
+
+.fee-badge i {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.fee-badge span {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+.recert-fee-card p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--light-text);
+}
+
+/* Deliverable Cards */
+.deliverable-card {
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    transition: var(--transition-normal);
+    height: 100%;
+}
+
+.deliverable-card:hover {
+    border-color: var(--primary-color);
+    transform: translateX(10px);
+    background: rgba(30, 41, 59, 0.8);
+}
+
+.deliverable-card i {
+    font-size: 2rem;
+    color: var(--primary-light);
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.deliverable-card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--light-text);
+}
+
+.deliverable-card p {
+    font-size: 0.9rem;
+    color: var(--gray-text);
+    margin: 0;
+}
+
+/* Modal Footer */
+.recertification-modal .modal-footer {
+    background: rgba(30, 41, 59, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 2.5rem;
+    gap: 1rem;
+}
+
+.recertification-modal .modal-footer .btn {
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition-normal);
+}
+
+.recertification-modal .modal-footer .btn-outline-light {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.recertification-modal .modal-footer .btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--white);
+    transform: translateY(-2px);
+}
+
+.recertification-modal .modal-footer .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.recertification-modal .modal-footer .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+}
+
+/* Modal Animations */
+.modal.fade .modal-dialog {
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: scale(1);
+}
+
+/* Responsive Styles for Modal */
+@media (max-width: 991px) {
+    .recertification-modal .modal-title {
+        font-size: 1.5rem;
+    }
+    
+    .recertification-modal .modal-title i {
+        font-size: 2rem;
+    }
+    
+    .recert-section-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .cycle-badge {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .cycle-number {
+        font-size: 2.5rem;
+    }
+    
+    .recert-cycle-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .recert-fee-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .recertification-modal .modal-body {
+        padding: 1.5rem;
+    }
+    
+    .recertification-modal .modal-header {
+        padding: 1.5rem;
+    }
+    
+    .recertification-modal .modal-footer {
+        padding: 1rem 1.5rem;
+        flex-direction: column;
+    }
+    
+    .recertification-modal .modal-footer .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .recert-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .recert-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .deliverable-card:hover {
+        transform: translateY(-5px);
+    }
+}

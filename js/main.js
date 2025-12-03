@@ -1,3 +1,6 @@
+const date = new Date()
+document.querySelector('.footer-year').textContent = date.getFullYear()
+
 // GSAP Animations and Interactivity
 gsap.registerPlugin(ScrollTrigger);
 
